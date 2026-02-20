@@ -1,8 +1,8 @@
 # Contributing to ZERO AGENT
 
-First off — thank you for taking the time to contribute! 🎉
+First off — thank you for being here! 🎉
 
-ZERO AGENT is built by the community, for the community. Every contribution matters, whether it's fixing a typo, reporting a bug, building a new skill, or improving the core runtime.
+ZERO AGENT is built by the community, for the community. Whether you're fixing a typo, reporting a bug, building a skill, or improving the core — every contribution matters.
 
 ---
 
@@ -10,9 +10,10 @@ ZERO AGENT is built by the community, for the community. Every contribution matt
 
 - **Report a bug** — something not working? Open an issue
 - **Suggest a feature** — have an idea? We'd love to hear it
-- **Build a skill** — create a new skill and share it with the community
+- **Build a skill** — create a skill and share it with the world
 - **Improve docs** — help make ZERO AGENT easier to understand
 - **Fix a bug** — pick up an open issue and submit a PR
+- **Share your setup** — publish your agent configuration as a template
 
 ---
 
@@ -20,7 +21,6 @@ ZERO AGENT is built by the community, for the community. Every contribution matt
 
 1. **Fork the repo**
    - Click "Fork" on the top right of the repo page
-   - This creates your own copy of ZERO AGENT
 
 2. **Clone your fork**
    ```bash
@@ -39,8 +39,7 @@ ZERO AGENT is built by the community, for the community. Every contribution matt
    ```
 
 5. **Make your changes**
-   - Keep changes focused and minimal
-   - One feature or fix per PR
+   - Keep changes focused — one feature or fix per PR
 
 6. **Commit your changes**
    ```bash
@@ -61,8 +60,6 @@ ZERO AGENT is built by the community, for the community. Every contribution matt
 
 ## Commit Message Format
 
-We use a simple convention for commit messages:
-
 ```
 feat: add new skill loader feature
 fix: resolve agent crash on skill unload
@@ -74,15 +71,34 @@ chore: clean up dependencies
 
 ## Building a Skill
 
-Skills are the core of ZERO AGENT. If you want to contribute a skill:
+Skills are the heart of ZERO AGENT. Anyone can build one and publish it anywhere — GitHub, npm, skills.sh. No approval process needed.
 
-1. Create a new folder under `/skills/your-skill-name`
-2. Add a `skill.json` with name, version, and description
-3. Add your skill logic in `index.js` or `index.ts`
-4. Write a basic README for your skill
-5. Submit a PR
+**Basic skill structure:**
+```
+my-skill/
+├── skill.json       # Skill metadata (name, version, description, inputs)
+├── index.ts         # Skill logic
+└── README.md        # How to use this skill
+```
 
-Skill contribution guide coming soon.
+**skill.json example:**
+```json
+{
+  "name": "my-skill",
+  "version": "1.0.0",
+  "description": "What this skill does in one line",
+  "inputs": [
+    { "name": "url", "type": "string", "description": "URL to process" }
+  ]
+}
+```
+
+Publish to GitHub, npm or skills.sh and users can install it directly:
+```bash
+zeroagent install github:your-username/my-skill
+```
+
+Full skill building guide coming soon.
 
 ---
 
@@ -110,19 +126,19 @@ Open an issue at: `github.com/zeroagent-os/zeroagent/issues`
 
 ## Community Guidelines
 
-- Be respectful and welcoming to all contributors
-- Give constructive feedback
+- Be respectful and welcoming to everyone
+- Give constructive, helpful feedback
 - Help others when you can
-- No spam, self-promotion, or off-topic content
+- No spam or self-promotion
 
 ---
 
 ## Questions?
 
-Reach out on Twitter: [@zeroagentos](https://twitter.com/zeroagentos)
-
-Or open a discussion on GitHub.
+- 🐦 Twitter: [@zeroagentos](https://twitter.com/zeroagentos)
+- 💬 Discord: Coming soon
+- 🌐 Website: [zeroagentos.com](https://www.zeroagentos.com)
 
 ---
 
-**Built with ❤️ by [@james_eth_base](https://twitter.com/james_eth_base) and the ZERO AGENT community.**
+**Built with ❤️ by [@james_base_eth](https://twitter.com/james_base_eth) and the ZERO AGENT community.**
