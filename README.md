@@ -148,18 +148,60 @@ cd zeroagent
 # Install dependencies
 npm install
 
-# Run your agent
-npm start
+# Boot your agent
+zeroagent start
 ```
 
-> Core runtime in active development. Star the repo to get notified when it's ready.
+Your agent boots with **find-skills** pre-installed — a skill that helps you discover and install other skills in plain English.
+
+```bash
+# Find a skill for anything you want to do
+zeroagent find "track btc price"
+zeroagent find "summarise customer reviews"
+zeroagent find "monitor competitor prices"
+
+# Install a skill from skills.sh
+zeroagent install skills:btc-price-tracker
+
+# Run it
+zeroagent run btc-price-tracker
+
+# See all your installed skills
+zeroagent list
+
+# Check your agent status
+zeroagent status
+```
+
+Install from anywhere:
+
+```bash
+zeroagent install skills:skill-name          # From skills.sh
+zeroagent install github:username/repo       # From GitHub
+zeroagent install npm:package-name           # From npm
+zeroagent install https://any-url --skill name  # From any URL
+```
+
+Schedule a skill to run automatically (Cloud tier):
+
+```bash
+zeroagent schedule btc-price-tracker "*/15 * * * *"   # Every 15 minutes
+zeroagent trigger btc-price-tracker "btc_price < 80000" --value 80000
+```
+
+Upgrade anytime:
+
+```bash
+zeroagent upgrade
+```
 
 ---
 
 ## Roadmap
 
-- [ ] Core agent runtime
-- [ ] Universal skill installer (skills.sh, GitHub, npm, URL)
+- [x] Core agent runtime
+- [x] Universal skill installer (skills.sh, GitHub, npm, URL)
+- [x] CLI — install, run, list, remove, find, schedule, trigger
 - [ ] Skill aggregator with origin tags
 - [ ] Dashboard (browse, install, run skills)
 - [ ] Share My Agent Setup
