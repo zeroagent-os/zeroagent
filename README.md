@@ -199,4 +199,4 @@ Self-host for free and unlimited. Or use our managed cloud when you want the con
 
 ---
 
-**Built by [@james_eth_base](https://twitter.com/james_eth_base) and the ZERO AGENT community.**
+**Built by [@james_base_eth](https://twitter.com/james_base_eth) and the ZERO AGENT community.**
