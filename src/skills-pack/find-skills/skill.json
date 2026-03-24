@@ -1,0 +1,23 @@
+{
+  "id": "find-skills",
+  "name": "find-skills",
+  "version": "1.0.0",
+  "description": "Discover and install skills from anywhere on the internet in plain English.",
+  "icon": "🔍",
+  "category": "Core",
+  "tier": "free",
+  "origin": "zeroagent-os",
+  "originTag": "✅ ZERO AGENT",
+  "executionMode": "on-demand",
+  "preInstalled": true,
+  "inputs": [
+    {
+      "name": "query",
+      "type": "string",
+      "description": "What do you want your agent to do?",
+      "required": true,
+      "placeholder": "track crypto prices"
+    }
+  ],
+  "output": "Matching skills with install commands"
+}
